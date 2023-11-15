@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    width: 80%;
+    margin: 0 auto;
+}
 header{
     border: 1px solid black;
     width: 100%;
@@ -13,4 +17,17 @@ header{
     text-transform: capitalize;
     color: #dc155d;
     font-size: 20px;
+}
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.container{
+    border: 1px solid black;
+    background-color: lightblue;
+    padding: 20px;
+}
+.img{
+    float: left;
 }
