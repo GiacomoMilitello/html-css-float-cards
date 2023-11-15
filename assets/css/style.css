@@ -39,8 +39,6 @@ body {
 }
 .content {
     height: 100%;
-    /* padding: 20px; */
-    /* text-align: center; */
 }
 img {
     float: left;
@@ -67,4 +65,7 @@ h2,
 p,
 a {
     font-family: 'Concert One', sans-serif;
+}
+.content :not(img) {
+    padding: 2px;
 }
