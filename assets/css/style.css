@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    font-family: 'Concert One', sans-serif;
+}
 header{
     width: 100%;
     height: 100px;
@@ -20,7 +23,7 @@ body {
 #lorem {
     text-align: center;
 }
-.container::after {
+.clearfix::after {
     content: "";
     display: table;
     clear: both;
@@ -30,7 +33,7 @@ body {
 }
 .rectangle {
     float: left;
-    width: calc(33.33% - 20px);
+    width: calc(100%/3 - 20px);
     height: 70px;
     margin-right: 20px;
     background-color: #0d0c12;
@@ -39,6 +42,9 @@ body {
 }
 .content {
     height: 100%;
+}
+.container .rectangle:last-child{
+    margin-right: 0;
 }
 img {
     float: left;
@@ -49,23 +55,19 @@ img {
 }
 h2 {
     font-size: 16px;
-    color: white;
 }
+h2,
 div > p {
-    font-size: 14px;
     color: white;
 }
+div > p,
 div > a {
     font-size: 14px;
+}
+div > a {
     color: #59b3dc;
     text-decoration: none;
 }
-h1,
-h2,
-p,
-a {
-    font-family: 'Concert One', sans-serif;
-}
 .content :not(img) {
-    padding: 2px;
+    padding: 3px;
 }
